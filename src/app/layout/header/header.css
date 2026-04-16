@@ -1,0 +1,134 @@
+nav {
+/*     background: var(--color-background); */
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
+.logo img {
+    width: 150px;
+    height: 90px;
+    margin: 0;
+    filter: drop-shadow(0 1px 2px var(--color-shadow));
+    cursor: pointer;
+}
+
+.nav-container {
+    width: min(90%, 1600px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    --icon-toggle-menu: url("/img/line-md--close-to-menu-alt-transition.svg");
+    --transform-menu-show: translate(100%);
+}
+
+.nav-container:has(.nav-input:checked) {
+    --icon-toggle-menu: url("/img/line-md--close-small.svg");
+    --transform-menu-show: translate(0);
+
+}
+
+.logo,
+.nav-toggle {
+    z-index: 10;
+}
+
+.nav-toggle {
+    width: 30px;
+    height: 30px;
+    background-image: var(--icon-toggle-menu);
+    background-size: cover;
+    cursor: pointer;
+
+    transition: background-image 0.4s ease;
+}
+
+.nav-input {
+    display: none;
+}
+
+.nav-list {
+
+    transform: var(--transform-menu-show);
+
+    position: fixed;
+    inset: 60px 0 0 0;
+
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    text-align: center;
+
+    padding: 1.5rem 5%;
+
+    backdrop-filter: blur(10px);
+
+    list-style: none;
+
+    transition: .4s transform;
+}
+
+.nav-link {
+    color: var(--color-subtittle);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-subtittle);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-tittle);
+    transition: width 0.1s ease;
+    filter: drop-shadow(0 0 5px var(--color-shadow));
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    text-shadow: 0 0 20px var(--color-shadow);
+}
+
+@media (width > 764px) {
+    .nav-container {
+        --transform-menu-show: translate(0);
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        position: static;
+        grid-auto-flow: column;
+        place-content: unset;
+        padding: 0;
+        background-color: var(--color-background);
+
+        transition: unset;
+    }
+}

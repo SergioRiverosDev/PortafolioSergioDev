@@ -1,0 +1,47 @@
+<article class="about-container">
+    <div class="container">
+        <section class="tittle">
+            <p class="me">Conoceme</p>
+            <h1 class="about-me">
+                <p>Sobre</p>
+                <p>mí</p>
+            </h1>
+        </section>
+        <section class="info-about">
+            <div class="text-about-info">
+                <h3>
+                    <p>Frontend Developer </p>
+                    <p>| Angular</p>
+                </h3>
+                <p class="text">
+                    Desarrollador Frontend enfocado en Angular, apasionado por crear interfaces web modernas,
+                    funcionales
+                    y centradas en la experiencia del usuario. Trabajo con TypeScript, HTML y CSS, aplicando buenas
+                    prácticas para construir aplicaciones claras, escalables y mantenibles.
+                </p>
+                <p class="text">
+                    Destaco por mi capacidad de
+                    aprendizaje continuo, atención al detalle y compromiso con la calidad del código. Siempre busco
+                    mejorar mis habilidades y mantenerme actualizado con las nuevas tecnologías y tendencias del
+                    desarrollo web.
+                </p>
+            </div>
+            <div class="cards-info">
+                <article>
+                    <img src="/img/Perfil2.png" alt="Perfil">
+                </article>
+            </div>
+        </section>
+        <section class="tecnologies">
+            <div class="cards-tecnologies">
+                @for (tecnologie of technologies; track $index) {
+                <div class="card-tecnologie">
+                    <img width="25px" height="25px" [src]="tecnologie.img" alt="{{tecnologie.name}}">
+                    <h3>{{tecnologie.name}}</h3>
+                    <!-- <p>{{tecnologie.description}}</p> -->
+                </div>
+                }
+            </div>
+        </section>
+    </div>
+</article>

@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "img": "",
+      "name": null,
+      "description": "Daniel",
+      "demo": "",
+      "code": ""
+    },
+    {
+      "img": "",
+      "name": null,
+      "description": "Daniel",
+      "demo": "",
+      "code": ""
+    }
+  ],
+  "information": {
+    "phone": "3219947458",
+    "email": "sergioriverosdev@gmail.com",
+    "repository": "https://github.com/SergioRiverosDev?tab=repositories",
+    "linkedin": "www.linkedin.com/in/sergio-andres-riveros-59b0523a4"
+}
+}
