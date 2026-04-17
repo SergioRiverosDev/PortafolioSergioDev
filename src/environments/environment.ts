@@ -1,3 +1,3 @@
 export const environment = {
-    urlServer: 'http://localhost:3000'
+    urlServer: 'portafoliosergiodev-production-2990.up.railway.app'
 };
