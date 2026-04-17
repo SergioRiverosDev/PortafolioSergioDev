@@ -82,6 +82,9 @@
     border-radius: 1rem;
     background-color: oklch(15.331% 0.04625 259.321);
 }
+.card-tecnologie {
+  user-select: none;
+}
 
 .card-tecnologie:hover{
     border: 1px solid var(--color-tittle);
@@ -102,11 +105,13 @@
     height: 16rem;   
     border-radius: 50%; 
     border: 1px solid var(--color-tittle);
-    box-shadow: 0 0 10px var(--color-shadow);
+    box-shadow: 0 0 20px var(--color-shadow);
 }
 .tecnologies{
     margin: auto;
     width: 100%;
+    margin-bottom: 0.5rem;
+        margin-top: 1rem;
 }
 /* destello */
 

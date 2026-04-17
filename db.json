@@ -1,24 +1,24 @@
 {
   "projects": [
     {
-      "img": "",
-      "name": null,
-      "description": "Daniel",
-      "demo": "",
-      "code": ""
+      "name": "Burguer Queen",
+      "description": "Aplicación web para gestión de pedidos de hamburguesería con enfoque en eficiencia y experiencia de usuario.",
+      "img": "/img/BurguerQueen.png",
+      "demo": "https://burguer-queen-blush.vercel.app",
+      "code": "https://github.com/SergioRiverosDev/BurguerQueen"
     },
     {
-      "img": "",
-      "name": null,
-      "description": "Daniel",
-      "demo": "",
-      "code": ""
+      "name": "CatBiox",
+      "description": "Plataforma web para promoción y comercialización de arena para gatos, con enfoque en presentación del producto y experiencia de usuario.",
+      "img": "/img/Catbiox.png",
+      "demo": "https://cat-biox.vercel.app/",
+      "code": "https://github.com/SergioRiverosDev/CatBiox"
     }
   ],
   "information": {
-    "phone": "3219947458",
+    "phone": 3219947458,
     "email": "sergioriverosdev@gmail.com",
     "repository": "https://github.com/SergioRiverosDev?tab=repositories",
-    "linkedin": "www.linkedin.com/in/sergio-andres-riveros-59b0523a4"
+    "linkedin": "https://www.linkedin.com/in/sergio-andres-riveros-59b0523a4"
 }
 }

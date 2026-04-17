@@ -88,13 +88,9 @@ nav::before {
     color: var(--color-subtittle);
     text-decoration: none;
     cursor: pointer;
+    position: relative;
 }
 
-.nav-link {
-    position: relative;
-    text-decoration: none;
-    color: var(--color-subtittle);
-}
 
 .nav-link::after {
     content: "";
@@ -103,7 +99,7 @@ nav::before {
     bottom: -4px;
     width: 0;
     height: 2px;
-    background-color: var(--color-tittle);
+/*     background-color: var(--color-tittle); */
     transition: width 0.1s ease;
     filter: drop-shadow(0 0 5px var(--color-shadow));
 }
@@ -127,8 +123,8 @@ nav::before {
         grid-auto-flow: column;
         place-content: unset;
         padding: 0;
-        background-color: var(--color-background);
-
+        background: transparent;
         transition: unset;
+        backdrop-filter: none;
     }
 }
