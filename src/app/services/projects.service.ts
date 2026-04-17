@@ -15,6 +15,4 @@ export class ProjectsService {
   getProjects(){
     return this.http.get<ProjectModel[]>(this.url).pipe(first());
   }
-
-
 }
