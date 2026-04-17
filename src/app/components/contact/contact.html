@@ -1,1 +1,92 @@
-<p>contact works!</p>
+<article class="contact-container">
+    <div class="container">
+        <section class="info-contact">
+            <p class="talk">Hablemos</p>
+            <h1>
+                <p>Ponte en</p>
+                <p>Contacto</p>
+            </h1>
+            <p class="text-contact">¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas. Enviame un mensaje y
+                te responderé lo antes posible.</p>
+        </section>
+        <section class="data-contact">
+            <div class="information-text-contact">
+                <h3>Información de Contacto</h3>
+                <p>Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales. No dudes en
+                    contactarme a través de cualquiera de estos medios.</p>
+                <div class="work">
+                    <h3>¿Listo para empezar?</h3>
+                    <p>Trabajemos juntos para crear algo increíble. Tu próximo proyecto merece lo mejor.</p>
+                </div>
+            </div>
+
+            @if (information$|async; as information) {
+            <div class="data">
+                <div class="box">
+                    <div class="separation-data">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <path stroke-dasharray="66"
+                                        d="M4 5h16c0.55 0 1 0.45 1 1v12c0 0.55 -0.45 1 -1 1h-16c-0.55 0 -1 -0.45 -1 -1v-12c0 -0.55 0.45 -1 1 -1Z">
+                                        <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s"
+                                            values="66;0" />
+                                    </path>
+                                    <path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5l9 5.5l9 -5.5">
+                                        <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.3s"
+                                            to="0" />
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="data-email">
+                            <p>Email</p>
+                            <h4>{{information.email}}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="separation-data">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-dasharray="62" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="62;0" />
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="data-phone">
+                            <p>Teléfono</p>
+                            <h4>{{information.phone}}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="separation-data">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-dasharray="48" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M12 20.5c0 0 -6 -7 -6 -11.5c0 -3.31 2.69 -6 6 -6c3.31 0 6 2.69 6 6c0 4.5 -6 11.5 -6 11.5Z">
+                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="48;0" />
+                                </path>
+                                <circle cx="12" cy="9" fill="currentColor">
+                                    <animate fill="freeze" attributeName="r" begin="0.7s" dur="0.2s" to="2.5" />
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class="data-location">
+                            <p>Ubicación</p>
+                            <h4>{{information.location}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+
+        </section>
+
+    </div>
+</article>

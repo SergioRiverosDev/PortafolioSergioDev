@@ -1,7 +1,7 @@
 <nav>
     <div class="nav-container">
-        <figure class="logo">
-            <img src="/img/LogoDevPNG.png" alt="Logo">
+        <figure class="logo" (click)="goHome()">
+            <img src="/img/LogoDevPNG.png" alt="Logo" >
         </figure>
 
         <label  class="nav-toggle">
@@ -9,10 +9,10 @@
         </label>
     
             <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Sobre mi</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="goHome()">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="goProjects()">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="goAbout()">Sobre mi</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="goContact()">Contacto</a></li>
             </ul>
         </div>
 </nav>

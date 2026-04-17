@@ -18,6 +18,8 @@
     text-align: center;
     font-size: 1.5rem;
     color: var(--color-tittle);
+    margin-bottom: 0.7rem;
+
 }
 .about-me {
     display: flex;
@@ -78,9 +80,9 @@
     width: 9rem;
     margin-inline: 1rem;
     padding: 1rem;
-    border: 1px solid var(--color-text);
+    border: 1px solid oklch(0.28 0.04 255);
     border-radius: 1rem;
-    background-color: oklch(15.331% 0.04625 259.321);
+    background-color: oklch(0.15 0.035 255);
 }
 .card-tecnologie {
   user-select: none;
@@ -111,7 +113,9 @@
     margin: auto;
     width: 100%;
     margin-bottom: 0.5rem;
-        margin-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 /* destello */
 
@@ -180,7 +184,7 @@
   }
 
   .card-tecnologie {
-    width: auto; /* evita que se rompa el grid */
+    width: auto;
     margin: 0.3rem;
     padding: 0.9rem;
 

@@ -1,7 +1,8 @@
 .projects-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+
+    margin-bottom: 5rem;
     position: relative;
     overflow: hidden;
 }
@@ -17,6 +18,7 @@
 .tittle-projects {
     color: var(--color-tittle);
     font-size: 1.5rem;
+    margin-bottom: 0.7rem;
 }
 
 .info-projects h1 {
@@ -29,6 +31,8 @@
     color: var(--color-text);
     font-size: 1.2rem;
     margin-block: 1rem;
+    line-height: 1.6;
+
 }
 
 .projects {
@@ -38,10 +42,10 @@
 
 .card-project {
     margin: 1rem;
-    border-radius: 2rem;
-    border: 1px solid var(--color-text);
+    border-radius: 1rem;
+    border: 1px solid oklch(0.28 0.04 255);
     overflow: hidden;
-    background-color: oklch(15.331% 0.04625 259.321);
+    background-color: oklch(0.15 0.035 255);
 
 }
 
@@ -120,6 +124,12 @@
     text-decoration: none;
     color: var(--color-tittle);
 }
+/* .pagination{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+} */
 
 /* destello */
 
@@ -154,12 +164,15 @@
 
 /* movil */
 @media (max-width: 768px) {
+    .projects-container{
+            margin-top: 2rem;
+    }
     .container {
         width: 95%;
     }
 
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 0.5rem;
     }
 
@@ -170,13 +183,13 @@
     .card-project {
         border-radius: 1rem;
         margin: 0.3rem;
-        border: 1px solid var(--color-tittle);
-        box-shadow: 0 0 10px var(--color-shadow);
+        border: 1px solid oklch(0.28 0.04 255);
+        /*         box-shadow: 0 0 10px var(--color-shadow); */
     }
 
     .card-project img {
         width: 100%;
-        height: 80px;
+        height: 90px;
     }
 
     .text-card {
@@ -189,17 +202,23 @@
 
     .card-project p {
         font-size: 0.7rem;
-        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .card-project p.expanded{
+        -webkit-line-clamp: unset;
     }
 
     .buttons {
         display: flex;
-        justify-content: center;
-        gap: 0.3rem;
+        justify-content: start;
+        gap: 0.7rem;
     }
 
     .buttons a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     /* destello */
@@ -212,7 +231,7 @@
         left: 140%;
     }
 
-    .buttons svg{
+    .buttons svg {
         width: 10px;
         height: 10px;
     }

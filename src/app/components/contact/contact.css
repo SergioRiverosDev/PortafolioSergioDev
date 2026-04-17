@@ -1,0 +1,251 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.container{
+    width: 80%;
+}
+
+.info-contact h1{
+    display: flex;
+    justify-content: center;
+}
+.info-contact h1 p:first-child{
+    margin-left: 0.5rem;
+    color:var(--color-subtittle)
+}
+.info-contact h1 p:last-child{
+    margin-left: 0.5rem;
+    color:var(--color-tittle);
+    text-shadow: 0 0 10px var(--color-shadow);
+}
+.talk {
+    color: var(--color-tittle);
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+.text-contact {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    margin-block: 1rem;
+    line-height: 1.6;
+    
+}
+.data-contact {
+    display: flex;
+    margin-top: 3rem;
+}
+.information-text-contact {
+    width: 50%;
+    text-align: left;
+}
+.information-text-contact h3{
+    color: var(--color-subtittle);
+    margin-bottom: 1rem;
+}
+.information-text-contact p{
+    color: var(--color-text);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+section{
+    gap: 2rem;
+}
+.work {
+    border: 0.1px solid oklch(0.28 0.04 255);
+    border-radius: 1rem;
+    padding: 2rem;
+/*     background-color:  oklch(0.15 0.035 255); */
+    margin-top: 1rem;
+}
+.data {
+    color: var(--color-subtittle);
+    width: 50%;
+    border: 1px solid oklch(0.28 0.04 255);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo svg{
+    width: 30px;
+    height: 30px;
+}
+
+.separation-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.8rem;
+}
+
+
+
+.separation-data p{
+    color: var(--color-text);
+}
+.logo {
+    
+    padding: 0.5rem;
+    background-color: oklch(28.056% 0.0392 253.587 );
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    padding: 0.3rem;
+    border-radius: 1rem;
+    border: 1px solid oklch(0.28 0.04 255);
+    width: 95%;
+    margin: 0.5rem;
+}
+.box:hover{
+    border: 1px solid var(--color-tittle);
+    color: var(--color-tittle);
+    box-shadow: 0 0 10px var(--color-shadow);
+    transition: box-shadow .2s ease;
+}
+
+.logo svg{
+    color: var(--color-tittle);
+}
+/* destellos */
+.contact-container::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+    border-radius: 50%;
+    top: 70%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+.contact-container::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+    border-radius: 50%;
+    top: 70%;
+    left: 80%;
+    transform: translate(-260%, -90%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* tablet */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .data-contact {
+        gap: 2rem;
+    }
+
+    .information-text-contact {
+        width: 50%;
+    }
+    .data {
+        width: 50%;
+    }
+
+    .information-text-contact p {
+        font-size: 1.1rem;
+    }
+}
+
+/* movil*/
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .data-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information-text-contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .information-text-contact p {
+        font-size: 1rem;
+    }
+
+    .text-contact {
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+    .work {
+    margin-top: 1.7rem;
+    }
+    .data-contact {
+    margin-top: 0;
+    }
+    .contact-container::after {
+    transform: translate(-60%, -160%);
+    }
+    .work {
+    padding: 1rem;
+}
+
+}
+
+/* movil pequeño*/
+@media (max-width: 480px) {
+
+    .info-contact h1 {
+        flex-direction: column;
+    }
+
+    .talk {
+        font-size: 1.5rem;
+    }
+
+    .text-contact {
+        font-size: 1rem;
+
+    }
+
+    .logo svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo {
+        padding: 0.4rem;
+    }
+
+    .separation-data {
+        gap: 0.5rem;
+    }
+}
